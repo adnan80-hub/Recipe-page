@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: 'Outfit', sans-serif!important; 
+    height: 230vh!important;
+    width: 100%!important;
+    display: grid;
+    place-items: center;
+    background-color: var(--Eggshell)!important;
+}
+:root {
+    --color-Nutmeg: hsl(14, 45%, 36%);
+    --color-Dark-Raspberry: hsl(332, 51%, 32%);
+    --color-White: hsl(0, 0%, 100%);
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+
+ul {
+    list-style: none;
+}
+.omelette-page {
+    max-width: 600px;
+    width: 100%;
+    padding: 25px;
+}
+.omelette-page img {
+    margin-bottom: 25px;
+}
+.omelette-page h1 {
+    font-size: 32px;
+    color: var(--Dark-Charcoal);
+    margin-bottom: 15px;
+    font-family: 'Young Serif', serif!important;
+}
+.omelette-page p {
+    font-size: 13px;
+    color: var(--Wenge-Brown);
+    margin-bottom: 20px;
+}
+
+.omelette-page .preparation {
+    padding: 23px;
+    background-color: hsl(332deg 51% 32% / 8%);
+    margin-bottom: 20px;
+}
+.omelette-page .preparation .head-prepare {
+    color: var(--color-Dark-Raspberry);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.omelette-page .preparation ul li {
+    font-size: 13px;
+}
+.omelette-page .preparation ul li:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+.omelette-page .preparation ul li::before {
+    content: "";
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-color: var(--color-Dark-Raspberry);
+}
+
+.omelette-page .preparation ul li span {
+    color: var(--Wenge-Brown);
+    font-weight: bold;
+}
+/* start-ingredients */
+.omelette-page .ingredient {
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--Light-Grey);
+}
+.omelette-page .ingredient h2 {
+    font-size: 22px;
+    color: var(--color-Nutmeg);
+    margin-bottom: 15px;
+    font-family: 'Young Serif', serif!important;
+}
+.omelette-page .ingredient ul li {
+    font-size: 13px;
+}
+.omelette-page .ingredient ul li:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+.omelette-page .ingredient ul li::before {
+    content: "";
+    left: 0;
+    top: 10px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-color: var(--color-Nutmeg);
+}
+/* end-ingredients */
+/* start-structions */
+.omelette-page .instructions {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid var(--Light-Grey);
+}
+.omelette-page .instructions h2 {
+    font-size: 22px;
+    color: var(--color-Nutmeg);
+    margin-bottom: 15px;
+    font-family: 'Young Serif', serif!important;
+}
+.omelette-page .instructions .info {
+    font-size: 13px;
+    margin-left: 25px;
+}
+.omelette-page .instructions .info:not(:last-of-type) {
+    margin-bottom: 7px;
+}
+.omelette-page .instructions .info::before {
+    content: "1.";
+    position: absolute;
+    left: -23px;
+    top: 0px;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--color-Nutmeg);
+    margin-right: 20px;
+}
+.omelette-page .instructions > .info:nth-child(3)::before {
+    content: "2.";
+}
+.omelette-page .instructions > .info:nth-child(4)::before {
+    content: "3.";
+}
+.omelette-page .instructions > .info:nth-child(5)::before {
+    content: "4.";
+}
+.omelette-page .instructions > .info:nth-child(6)::before {
+    content: "5.";
+}
+.omelette-page .instructions > .info:nth-child(7)::before {
+    content: "6.";
+}
+.omelette-page .instructions .info span {
+    font-weight: bold;
+    color: var(--Wenge-Brown);
+}
+/* end-structions */
+/* start-nutrition */
+.omelette-page .nutrition h2 {
+    font-size: 22px;
+    color: var(--color-Nutmeg);
+    margin-bottom: 15px;
+    font-family: 'Young Serif', serif!important;
+}
+.omelette-page .nutrition p {
+    font-size: 13px;
+    color: var(--Wenge-Brown);
+}
+.nutrition .type-nutri {
+    padding: 15px 0 10px 15px ;
+    font-size: 14px;
+}
+.nutrition .type-nutri:not(:last-of-type){
+    border-bottom: 1px solid var(--Light-Grey);
+
+}
+.nutrition .type-nutri span:first-of-type {
+    color: var(--Wenge-Brown);
+    flex: 1; 
+}
+.nutrition .type-nutri span:last-of-type {
+    color: var(--color-Nutmeg);
+    font-weight: bold;
+    flex: 1; 
+}
+/* end-nutrition */
